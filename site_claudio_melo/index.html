@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicanalista Cláudio Melo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="corpo">
+
+        <!-- Menu -->
+        <div class="dropdown" id="dropdown-menu">
+            <button class="menu-toggle">☰</button>
+            <div class="menu-content">
+                <a href="#inicio" class="links">Início</a>
+                <a href="#consultorio" class="links">Consultório</a>
+                <a href="#agendar" class="links">Agendar</a>
+                <a href="#contato" class="links">Contato</a>
+            </div>
+        </div>
+
+        <!-- Hero -->
+        <section id="inicio">
+            <div class="imagem_foto">
+              <div class="hero">
+                <div class="texto_lateral">
+                  <p class="titulo_pequeno">Psicólogo – Psicanalista</p>
+                  <h1 class="nome_destaque">Cláudio Melo</h1>
+                  <p class="descricao_long">
+                    Minha trajetória na Psicologia e Psicanálise, com mais de 20 anos de experiência, sempre foi guiada pelo desejo de compreender a subjetividade humana.
+                    Minha formação na orientação lacaniana me permite oferecer uma escuta que valoriza a singularidade de cada sujeito, respeitando o tempo e a lógica de sua própria fala.
+                    A clínica não se limita ao conhecimento técnico, mas à construção de um espaço onde o paciente pode elaborar suas questões sem julgamentos.
+                    Meu compromisso é sustentar esse percurso com ética e acolhimento.
+                  </p>
+                </div>
+                <div class="imagem_lateral">
+                  <img src="imagens/foto_Teste.jpeg" alt="Foto de Cláudio Melo">
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <!-- Consultório -->
+        <section id="consultorio">
+            <h1 class="titulos">Consultório</h1>
+            <div class="galeria">
+                <div class="foto"><img src="imagens/foto1.jpg" alt="Foto 1"></div>
+                <div class="foto"><img src="imagens/foto2.jpg" alt="Foto 2"></div>
+                <div class="foto"><img src="imagens/foto3.jpg" alt="Foto 3"></div>
+                <div class="foto"><img src="imagens/foto4.jpg" alt="Foto 4"></div>
+                <div class="foto"><img src="imagens/foto5.jpg" alt="Foto 5"></div>
+                <div class="foto"><img src="imagens/foto6.jpg" alt="Foto 6"></div>
+                <div class="foto"><img src="imagens/foto7.jpg" alt="Foto 7"></div>
+            </div>
+            <div class="widget-mapa">
+                <p>
+                  <strong>Endereço:</strong><br>
+                  Av. Tancredo Neves, 1632<br>
+                  Edf. Salvador Trade Center, Sala 1108, Torre Norte<br>
+                  <div>
+                      <a href="https://www.google.com/maps?q=Av.+Tancredo+Neves,+1632,+Salvador+Trade+Center,+Sala+1108" 
+                         target="_blank" 
+                         class="botao-mapa">
+                        📍 Ver no Google Maps
+                      </a>
+                  </div>
+                </p>
+              </div>
+            <div class="descricao">
+                <h1 class="titulos">Formações</h1>
+                <p class="paragrafos">
+                    - Formação e Bacharelado em Psicologia, Universidade Federal da Bahia, 1996
+                    <br><br>
+                    - Especialização em Saúde Mental, Universidade Federal da Bahia, 2006
+                    <br><br>
+                    - Mestrado em Psicologia, Universidade Federal do Rio de Janeiro, 2014
+                </p>
+                <h1 class="titulos">Publicação</h1>
+                <p class="paragrafos">
+                    - Biopolitics and Pain: Approximations between Foucault and Lacanian Psychoanalysis (Psico-USF [online], 2016)
+                </p>
+            </div>
+          </div>
+
+            <!-- Lightbox -->
+            <div id="lightbox" class="lightbox">
+                <span class="fechar">&times;</span>
+                <span class="seta-esquerda">&#10094;</span>
+                <img id="lightbox-img" src="" alt="Imagem ampliada">
+                <span class="seta-direita">&#10095;</span>
+            </div>
+        </section>
+
+        <!-- Agendar -->
+        <section id="agendar" class="widget-agendamento">
+            <h1 class="titulo_agendar">Agendar Consulta</h1>
+            <div>
+                <a class="botao-agendar" href="https://www.doctoralia.com.br/claudio-melo/psicologo-psicanalista/salvador" target="_blank">
+                    Agendar pelo Doctoralia
+                </a>
+            </div>
+        </section>
+
+        <section id="agendamento">
+            <h2 class="titulos">Agende uma Consulta</h2>
+
+        <!-- Rodapé -->
+        <section>
+            <footer class="rodape">
+                <div class="rodape-topo">
+                    <div class="coluna centro">
+                        <img src="imagens/background_img.png" alt="Logotipo" class="logo-footer">
+                    </div>
+                    <div class="coluna direita">
+                        <p>Telefone: <a href="tel:+5571993464808">(71) 99346-4808</a></p>
+                        <p>E-mail: <a href="mailto:claudiocmelo2@yahoo.com.br">claudiocmelo2@yahoo.com.br</a></p>
+                        <div class="redes-sociais">
+                            <a href="https://www.doctoralia.com.br/claudio-melo/psicologo-psicanalista/salvador"><img src="imagens/doctoralia.png" alt="Doctoralia"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="rodape-endereco">
+                    <p>Av. Tancredo Neves, 1632, Edf. Salvador Trade Center, Sala 1108, Torre Norte</p>
+                </div>
+            </footer>
+        
+        <!-- Scripts -->
+        <script>
+            const menuButton = document.querySelector('.menu-toggle');
+            const dropdown = document.getElementById('dropdown-menu');
+            menuButton.addEventListener('click', () => {
+                dropdown.classList.toggle('active');
+            });
+
+            const fotos = document.querySelectorAll('.foto img');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const fecharBtn = document.querySelector('.fechar');
+            const setaEsquerda = document.querySelector('.seta-esquerda');
+            const setaDireita = document.querySelector('.seta-direita');
+
+            let imagemAtual = 0;
+
+            fotos.forEach((foto, index) => {
+                foto.addEventListener('click', () => {
+                    imagemAtual = index;
+                    lightboxImg.src = foto.src;
+                    lightbox.style.display = 'flex';
+                    dropdown.style.display = 'none';
+                });
+            });
+
+            const mostrarImagem = (index) => {
+                if (index >= 0 && index < fotos.length) {
+                    lightboxImg.src = fotos[index].src;
+                    imagemAtual = index;
+                }
+            };
+
+            setaEsquerda.addEventListener('click', () => {
+                imagemAtual = (imagemAtual - 1 + fotos.length) % fotos.length;
+                mostrarImagem(imagemAtual);
+            });
+
+            setaDireita.addEventListener('click', () => {
+                imagemAtual = (imagemAtual + 1) % fotos.length;
+                mostrarImagem(imagemAtual);
+            });
+
+            fecharBtn.addEventListener('click', () => {
+                lightbox.style.display = 'none';
+                dropdown.style.display = '';
+            });
+
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    lightbox.style.display = 'none';
+                    dropdown.style.display = '';
+                }
+            });
+        </script>
+
+    </div> 
+</body>
+</html>
