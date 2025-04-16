@@ -242,7 +242,7 @@ body, html {
   text-align: center;
 }
 .logo-footer {
-  width: 150px;
+  width: 50px;
   opacity: 0.9;
 }
 .rodape-endereco {
@@ -343,8 +343,9 @@ body, html {
     flex-direction: column;
     align-items: center;
   }
-
-  .texto_lateral,
+  .texto_lateral {
+    width: 100%;
+  }
   .imagem_lateral {
     max-width: 100%;
     padding: 30px;
